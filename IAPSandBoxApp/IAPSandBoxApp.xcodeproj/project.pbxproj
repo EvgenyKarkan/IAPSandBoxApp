@@ -13,6 +13,7 @@
 		DEAFB58B1BF4012800DCE0A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEAFB58A1BF4012800DCE0A3 /* Assets.xcassets */; };
 		DEAFB58E1BF4012800DCE0A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAFB58C1BF4012800DCE0A3 /* LaunchScreen.storyboard */; };
 		DEAFB5991BF4012800DCE0A3 /* IAPSandBoxAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB5981BF4012800DCE0A3 /* IAPSandBoxAppTests.swift */; };
+		DEAFB5A81BF407E300DCE0A3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAFB5A71BF407E300DCE0A3 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		DEAFB5941BF4012800DCE0A3 /* IAPSandBoxAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IAPSandBoxAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEAFB5981BF4012800DCE0A3 /* IAPSandBoxAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPSandBoxAppTests.swift; sourceTree = "<group>"; };
 		DEAFB59A1BF4012800DCE0A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEAFB5A71BF407E300DCE0A3 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEAFB5A81BF407E300DCE0A3 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +65,7 @@
 				DEAFB5821BF4012800DCE0A3 /* IAPSandBoxApp */,
 				DEAFB5971BF4012800DCE0A3 /* IAPSandBoxAppTests */,
 				DEAFB5811BF4012700DCE0A3 /* Products */,
+				DEAFB5A71BF407E300DCE0A3 /* StoreKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +149,12 @@
 				TargetAttributes = {
 					DEAFB57F1BF4012700DCE0A3 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 7VW32GE5L3;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					DEAFB5931BF4012800DCE0A3 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -326,10 +336,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = IAPSandBoxApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evgenykarkan.IAPSandBoxApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -337,10 +350,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = IAPSandBoxApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evgenykarkan.IAPSandBoxApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
