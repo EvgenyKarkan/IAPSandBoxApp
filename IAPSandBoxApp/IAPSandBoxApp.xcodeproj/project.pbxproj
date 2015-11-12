@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04AC5A8C1BF4945A0053E2CF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AC5A8B1BF4945A0053E2CF /* StoreKit.framework */; };
 		04AC5A8E1BF4A0670053E2CF /* IAPWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC5A8D1BF4A0670053E2CF /* IAPWorker.swift */; };
 		DEAFB5841BF4012800DCE0A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB5831BF4012800DCE0A3 /* AppDelegate.swift */; };
 		DEAFB5861BF4012800DCE0A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB5851BF4012800DCE0A3 /* ViewController.swift */; };
@@ -15,6 +14,7 @@
 		DEAFB58B1BF4012800DCE0A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEAFB58A1BF4012800DCE0A3 /* Assets.xcassets */; };
 		DEAFB58E1BF4012800DCE0A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAFB58C1BF4012800DCE0A3 /* LaunchScreen.storyboard */; };
 		DEAFB5991BF4012800DCE0A3 /* IAPSandBoxAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB5981BF4012800DCE0A3 /* IAPSandBoxAppTests.swift */; };
+		DED4D9001BF5378F00014C1F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED4D8FF1BF5378F00014C1F /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04AC5A8B1BF4945A0053E2CF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		04AC5A8D1BF4A0670053E2CF /* IAPWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPWorker.swift; sourceTree = "<group>"; };
 		DEAFB5801BF4012700DCE0A3 /* IAPSandBoxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IAPSandBoxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEAFB5831BF4012800DCE0A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		DEAFB5941BF4012800DCE0A3 /* IAPSandBoxAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IAPSandBoxAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEAFB5981BF4012800DCE0A3 /* IAPSandBoxAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPSandBoxAppTests.swift; sourceTree = "<group>"; };
 		DEAFB59A1BF4012800DCE0A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DED4D8FF1BF5378F00014C1F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04AC5A8C1BF4945A0053E2CF /* StoreKit.framework in Frameworks */,
+				DED4D9001BF5378F00014C1F /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +64,7 @@
 		DEAFB5771BF4012700DCE0A3 = {
 			isa = PBXGroup;
 			children = (
-				04AC5A8B1BF4945A0053E2CF /* StoreKit.framework */,
+				DED4D8FF1BF5378F00014C1F /* StoreKit.framework */,
 				DEAFB5821BF4012800DCE0A3 /* IAPSandBoxApp */,
 				DEAFB5971BF4012800DCE0A3 /* IAPSandBoxAppTests */,
 				DEAFB5811BF4012700DCE0A3 /* Products */,
@@ -341,7 +341,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yevgeniy Karkan (3YZNAVUC8R)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = IAPSandBoxApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -355,7 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yevgeniy Karkan (3YZNAVUC8R)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = IAPSandBoxApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
