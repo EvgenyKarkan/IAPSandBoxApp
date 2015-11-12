@@ -13,23 +13,22 @@ class ViewController: UIViewController {
 	@IBOutlet weak var buyButton: UIButton!
 	
 	let iapWorker = IAPWorker.worker
+
+
+	//MARK: - Action
 	
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 	@IBAction func buttonDidPressed(sender: AnyObject) {
 		
-		
-		print(iapWorker.canMakePayements())
-		
+		self.iapWorker.purchaseProductWithId("1_extra_coin") { (error) -> Void in
+			
+			if error != nil {
+				print("ERROR \(error)")
+				
+			}
+			else {
+				print("SUCCESS")
+			}
+		}
 	}
 }
 
