@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
 	@IBOutlet weak var buyButton: UIButton!
 	
+	let iapWorker = IAPWorker.worker
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,8 @@ class ViewController: UIViewController {
 
 	@IBAction func buttonDidPressed(sender: AnyObject) {
 		
+		
+		print(iapWorker.canMakePayements())
 		
 	}
 }

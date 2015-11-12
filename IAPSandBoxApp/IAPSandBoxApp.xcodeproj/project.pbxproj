@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04AC5A8C1BF4945A0053E2CF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AC5A8B1BF4945A0053E2CF /* StoreKit.framework */; };
+		04AC5A8E1BF4A0670053E2CF /* IAPWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC5A8D1BF4A0670053E2CF /* IAPWorker.swift */; };
 		DEAFB5841BF4012800DCE0A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB5831BF4012800DCE0A3 /* AppDelegate.swift */; };
 		DEAFB5861BF4012800DCE0A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAFB5851BF4012800DCE0A3 /* ViewController.swift */; };
 		DEAFB5891BF4012800DCE0A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAFB5871BF4012800DCE0A3 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		04AC5A8B1BF4945A0053E2CF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		04AC5A8D1BF4A0670053E2CF /* IAPWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPWorker.swift; sourceTree = "<group>"; };
 		DEAFB5801BF4012700DCE0A3 /* IAPSandBoxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IAPSandBoxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEAFB5831BF4012800DCE0A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEAFB5851BF4012800DCE0A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				DEAFB58A1BF4012800DCE0A3 /* Assets.xcassets */,
 				DEAFB58C1BF4012800DCE0A3 /* LaunchScreen.storyboard */,
 				DEAFB58F1BF4012800DCE0A3 /* Info.plist */,
+				04AC5A8D1BF4A0670053E2CF /* IAPWorker.swift */,
 			);
 			path = IAPSandBoxApp;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEAFB5861BF4012800DCE0A3 /* ViewController.swift in Sources */,
+				04AC5A8E1BF4A0670053E2CF /* IAPWorker.swift in Sources */,
 				DEAFB5841BF4012800DCE0A3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
